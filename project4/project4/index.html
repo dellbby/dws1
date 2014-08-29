@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html lang="en">
+	<head>
+		<title> Delia Akbari  - Project Four </title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+	</head>
+     
+
+<!--Container-->
+<div id="content"> 
+	<h1 id="top">The Toyota 86</h1>
+	<h2>Sold under three brand names:</h2>
+    <ul>
+  		<li><h3>Scion Fr-S</h3></li>
+  		<li><h3>Subaru BRZ</h3></li>
+  		<li><h3>Toyota 86</h3></li> 
+        </ul>
+  <hr>
+<!--Navigation-->
+<nav>
+  <h2>Navigation:</h2>
+  <ul>
+		<li><a href="#intro">Intro</a><p></li>
+		<li><a href="#interlude">Development & concepts</a><p></li>
+		<li><a href="#gallery">Gallery</a><p></li>
+		</ul>
+ </nav>       
+		
+	<h2 id="intro">Intro:</h2>		
+	The <em>86 </em>is a series of grand tourer sports coupes jointly developed by
+	<strong>Toyota and Subaru</strong> and solely manufactured by the latter. It features a boxer engine, 
+front-engine, rear-wheel-drive layout and 2+2 seating. The 86 is sold under three different 
+brands with respective model names: Toyota (Toyota 86 in Asia, South Africa, South America and 
+Australia;Toyota GT86 in Europe; both of the preceding names in New Zealand; Toyota FT86 in Jamaica); 
+Subaru (Subaru BRZ worldwide); Scion (Scion FR-S in the US and Canada). The name 86 (pronounced "eight-six" or 
+Hachi-Roku in Japanese, but more commonly pronounced as "eighty-six") leverages on the AE86 generation of 
+rear-wheel drive sports coupes and hatchbacks sold as the Toyota Sprinter Trueno and Toyota Corolla Levin from 1983 to 1987. 
+The 86 has been marketed as the spiritual successor to the AE86 by Toyota, with further referencing to a heritage tracing 
+back to the 1967 Toyota 2000GT (a front-engined, rear-drive sports car with a 2.0 litre engine whose design cues adorn the 86)
+ as well as the 1965 Toyota Sports 800, Toyota's first sports car (which also had a boxer engine).
+
+	<h2 id="interlude">Development & Concept:</h2>
+According to Wikipedia:
+
+	<blockquote cite="http://en.wikipedia.org/wiki/Toyota_86#Development_and_early_concepts">
+		The Initial layout and design elements for the 86 were first presented via the Toyota FT-HS 
+		concept car at the Detroit Motor Show in 2007. The FT-HS had a front engine, rear-wheel 
+		drive layout and 2+2 seating, but utilized a V6 engine with hybrid electric assistance. 
+		In 2008 Toyota bought 16.5% of Fuji Heavy Industries, parent to Subaru. Toyota, led by project 
+		leader Tetsuya Tada,offered Subaru involvement in their sport coupé project, co-developing a new 
+		boxer engine known as the D4-S,but Subaru rejected plans for further development of a rear 
+		wheel drive sports coupe due to their vehicle line-up predominantly offering all-wheel drive. 
+		Subaru's balk led the project to a six month halt before Toyota invited journalists and Subaru 
+		engineers to test a developmental prototype to demonstrate the capabilities of the platform. 
+		Following the test, Subaru agreed to become further involved in development. </blockquote>
+		
+		 <section>
+ <h2>Scion FR-S Vs Subaru BRZ </h2>
+ 
+<table>
+ <tr>
+  <th scope="col">Car Make</th>
+  <th scope="col">MSRP</th>		
+  <th scope="col">Engine</th>
+  <th scope="col">Rear suspension type</th>
+</tr>
+<tr>
+  <td>Scion FR-S</td>
+  <td>$24,500</td> 
+  <td>2.0L H-4	</td>
+  <td>independent double wishbone</td>
+</tr>
+<tr>
+  <td>Subaru BRZ</td>
+  <td>$27,495</td> 
+  <td>2.0L H-4	</td>
+  <td>double wishbone</td>
+</tr>
+</table>
+ </section>
+ 
+ <section>
+ <h2> Contact us</h2>
+<form>
+
+<label for="name">Name </label>	
+<input type="text" name="name" maxlength="30" id="name" required="required" placeholder="Name"  /><p>
+<div>
+<label for="age"> Age:</label>
+<input type="text" name="Age" id="age" required="required" placeholder="Age" /></div>
+<div>
+<p>Comments<p>
+<textarea> Enter your comment here..</textarea>
+</div>
+
+<div class="radio-buttons">
+<p>Inquiring about:</p>
+<input type="radio" name="moreinfo" value="question" checked="checked"/> The Scion Fr-s
+<input type="radio" name="moreinfo" value="question" checked="checked"/> The Subaru BRZ
+<input type="radio" name="moreinfo" value="question" checked="checked"/> Car Pricing
+<input type="radio" name="moreinfo" value="question" checked="checked"/> Interior Information
+<input type="radio" name="moreinfo" value="question" checked="checked"/> Exterior Information
+</div>
+
+<p>Where did you find us?
+<select>
+<option value="friend" selected="selected"> Friend</option>
+<option value="car"> Car and Driver</option>
+<option value="topgear"> Top Gear</option>
+<option value="mag"> Magazine</option>
+<input type="submit" value="Submit">
+
+</form>
+
+<h2>Subscribe!</h2>
+Enter your email address to receive our newsletters!
+<input type="text" name="email" id="subscribe" placeholder="subscribe" />
+<button onclick="myFunction()">Subscribe</button>
+
+<p id="sub"></p>
+<script>
+function myFunction() {
+    document.getElementById("sub").innerHTML = "Thanks for subscribing!";
+}
+</script>
+
+ </section>
+ 
+</div>
+ <!--Open sidebar-->
+
+<aside>
+	<h2>Search</h2>
+	<input type="search" name="search" placeholder="Enter keyword"/>
+	<input type="submit" value="search"/>	
+		
+<h2 id="gallery">Gallery</h2>
+		
+ <!--image gallery-->	
+	
+	<figure>
+<a href="images/redbig.jpg"><img src="images/redsmall.jpg"> </a>
+  <figcaption><b>A Scion FR-S</b></figcaption>
+</figure>
+	<figure>
+ <a href="images/whitebig.jpg"><img src="images/whitesmall.jpg"></a>
+  <figcaption>Toyota FT-86 Concept</figcaption> 
+  </figure>
+  <figure>
+   <a href="images/greybig.jpg"><img src="images/greysmall.jpg"></a>
+   <figcaption><b>Subaru BRZ</b></figcaption>
+</figure>
+
+  <small> NOTE: Images and information from <a href=http://en.wikipedia.org/wiki/Toyota_86#Development_and_early_concepts>Wikipedia.com</a></small>
+
+   <!--close sidebar-->
+
+		</aside><p>
+		
+<!--Footer-->
+<footer>
+This information was taken from <a href="http://www.wikipedia.com">Wikipedia.com</a>
+</footer>
+	</body>
+</html>
+
+
+
+
