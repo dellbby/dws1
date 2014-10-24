@@ -15,16 +15,19 @@
 <body>
 <!--Container-->
 <div id="container">
-
-	<h1>Photography</h1>
+	<header>
+		<h1>Photography</h1>
+	</header>
 
 	<!--Navigation-->
+<nav>
   	<h2>Navigation:</h2>
   		<ul>
 			<li><a href="#intro">Intro</a></li>
 			<li><a href="#interlude">Black and White</a></li>
 			<li><a href="#gallery">Gallery</a></li>
 		</ul>
+</nav>
 
 
 	<h2>Different camera brands</h2>
@@ -36,7 +39,9 @@
 
 	<hr>
 <!--Intro-->
+	<section>
 	<h2 id="intro">Intro:</h2>		
+
 		<strong>Photography</strong> is the science, art and practice of creating durable images by recording light 
 	or other electromagnetic radiation, either chemically by means of a light-sensitive material 
 	such as photographic film, or electronically by means of an image sensor. Typically, a lens 
@@ -51,6 +56,7 @@
 	used to photographically create a positive image on a paper base, known as a print, either by using an enlarger
 	 or by contact printing.
  	</p>
+ 	</section>
 
 
 	<h2 id="interlude">Black and White</h2>
@@ -72,10 +78,94 @@
 	can be used to salvage certain photographs taken in color which are unsatisfactory in their original 
 	form; sometimes when presented as black-and-white or single-color-toned images they are found to be more effective.
 
+ <h2>Different Types of Camera Comparisons </h2>
+<table>
+	 <tr>
+		<th scope="col">Camera Company</th>
+		<th scope="col">Camera Name</th>		
+		<th scope="col">Price</th>
+		<th scope="col">Weight</th>
+		<th scope="col">LCD Size</th>
+		<th scope="col">Megapixles</th>
+</tr>
+	<tr>
+		<td>Canon</td>
+		<td>Canon 5D Mark i</td> 
+		<td>$3,099.00</td>
+		<td>28.64oz.</td>
+		<td>3"</td>
+		<td>21.1</td>
+</tr>
+	<tr>
+		<td>Nikon</td>
+		<td>D4</td>
+		<td>$5,000.00</td> 
+		<td>2.6lb</td>
+		<td>3.2"</td>
+		<td>16.2</td>
+</tr>
+	<tr>
+		<td>Canon</td>
+		<td>EOS 7D</td>
+		<td>$1,099.00</td> 
+		<td>28.96oz</td>
+		<td>3"</td>
+		<td>18</td>
+</tr>
+</table>
 
+ <h2> Contact us</h2>
+<form action="example.php" method="post">
+	<label for="name">Name </label>	
+	<input type="text" name="name" maxlength="30" id="name" required="required" placeholder="Name"  /><p>
+		<div>
+	<label for="age"> Age:</label>
+	<input type="text" name="Age" id="age" required="required" placeholder="Age" /></div>
+		<div>
+	<p>Comments<p>
+	<textarea> Enter your comment here..</textarea>
+		</div>
+
+<div class="radio-buttons">
+	<p>Inquiring about:</p>
+	<input type="radio" name="moreinfo" value="question" checked="checked"/> Canon 5D Mark i
+	<input type="radio" name="moreinfo" value="question" checked="checked"/> Canon 5D Mark ii
+	<input type="radio" name="moreinfo" value="question" checked="checked"/> Canon 5D Mark ii
+	<input type="radio" name="moreinfo" value="question" checked="checked"/> Nikon D90
+	<input type="radio" name="moreinfo" value="question" checked="checked"/> Nikon D2300
+</div>
+
+<p>Where did you find us?
+	<select>
+			<option value="friend" selected="selected"> Friend</option>
+			<option value="google"> Google</option>
+			<option value="allthingsphoto"> All things Photography</option>
+			<option value="photo"> Photography.com</option>
+			<option value="tumblr"> Tumblr</option>
+			<option value="photopop"> Photo Pop</option>
+			<input type="submit" value="Submit">
+	</form>
+
+<h2>Subscribe!</h2>
+Enter your email address to receive our newsletters!
+<input type="text" name="email" id="subscribe" placeholder="subscribe" />
+<button onclick="myFunction()">Subscribe</button>
+
+<p id="sub"></p>
+<script>
+function myFunction() {
+    document.getElementById("sub").innerHTML = "Thanks for subscribing!";
+}
+</script>
+ 	
+
+ 	
 		</div>
  <!--Open sidebar-->
 <aside>
+	<h2>Search</h2>
+	<input type="search" name="search" placeholder="Enter keyword"/>
+	<input type="submit" value="search"/>	
 		
 <!--Gallery-->		
 	<h3 id="gallery">Gallery</h3>	
@@ -100,11 +190,11 @@
    			</strong>
   		</figcaption>
 	</figure>
-</div>
+</aside>
  <!--Footer-->
 	<footer>  
 		NOTE: Images and information from: <a href=http://en.wikipedia.org/wiki/Photography>Wikipedia.com</a>
-	</div>
+	</footer>
 
 
 </body>
